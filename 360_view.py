@@ -219,7 +219,7 @@ def main():
     vert_vector0 = np.stack([np.array(item.co) for item in mesh_obj.data.vertices])
     faces = mesh_obj.data.polygons
 
-    for i in range(VIEWS):
+    for i in range(VIEWS+1):
         stepsize = 360.0 / VIEWS if i > 0 else 0
         print(f"Rendering view {i} at stepsize {stepsize}")
         # render
